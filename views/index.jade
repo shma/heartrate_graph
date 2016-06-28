@@ -4,6 +4,7 @@ block content
   script(src='https://code.highcharts.com/highcharts.js')
   script(src='https://code.highcharts.com/modules/exporting.js')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/css/uikit.min.css')
+  link(rel='stylesheet', href='/css/colorbox.css')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/uikit.min.js')
 
   #container
@@ -13,25 +14,11 @@ block content
       .uk-grid
         .uk-width-3-6
           h2 Photos
-            ul.uk-grid
+            ul.uk-grid.photo-ul
               li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3566_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3567_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3568_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3569_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3570_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3571_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3572_1024.jpg')
-              li.uk-width-1-4.photo-list
-                img('src'='/img/0622/thumb_IMG_3573_1024.jpg')
         .uk-width-3-6
           h2 Map
           #map
   script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDh9MG75Kobq1L7KBUGJrAhptNRgTAHydU&callback=initMap')
+  script(src='/js/jquery.colorbox-min.js')
   script(src='/js/main.js')
